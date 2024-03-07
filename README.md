@@ -1,3 +1,8 @@
+## Sobre
+
+Portifólio para apresentação pessoal, destacando skills e techs, projetos e meios de contato.
+Construido com NextJS, estilizado com TailWind e animações criadas com o Framer Motion.
+
 ## Getting Started
 
 Primeiro, rode o codigo para instalar todo o pacote de dependencias do projeto
