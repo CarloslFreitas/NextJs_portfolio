@@ -1,13 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the code to install all package dependencies
+Primeiro, rode o codigo para instalar todo o pacote de dependencias do projeto
 ```bash
 npm install
 ```
 
-Second, run the development server (I used npm in this project):
+Segundo, rode o development server (Usei o npm no projeto):
 
 ```bash
 npm run dev
@@ -19,10 +17,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Voce pode começar a editar a pagina modificando pelo `app/page.tsx`. A atualização da pagina é automatica quando salva qualquer alteração feita na mesma.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Esse projeto usa tambem [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) pra automaticamente otimizar e carregar o estilo Inter, uma Google Font customizada.
 
 # NextJs_portfolio
