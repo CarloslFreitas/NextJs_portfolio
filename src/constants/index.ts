@@ -32,20 +32,13 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
-    width: 80,
-    height: 80,
-  },
-
-  {
     name: "TypeScript",
     Image: "/ts.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Next js 13",
+    name: "NextJs",
     Image: "/next.png",
     width: 80,
     height: 80,
@@ -53,12 +46,6 @@ export const SkillData = [
   {
     name: "Framer Motion",
     Image: "/framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
     width: 80,
     height: 80,
   },
@@ -73,6 +60,13 @@ export const SkillData = [
     Image: "/mongodb.png",
     width: 40,
     height: 40,
+  },
+  {
+    Name: "Postgres",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+    width: 90,
+    height: 90,
   },
 ];
 

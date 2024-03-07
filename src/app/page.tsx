@@ -46,27 +46,27 @@ export default function Home() {
           href="/my-skills"
           className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Learn more
+          Saiba Mais
         </Link>
 
         <Link
           href="/my-projects"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          My projects
+          Meus Projetos
         </Link>
         <Link
           href="/contact-me"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Contact me
+          Contate-me
         </Link>
       </div>
 
-      <div className="absolute bottom-0 right-0 z-[10]">
-        <Image src="/horse.png" alt="horse" height={300} width={300} className="absolute right-55 top-40" />
-        <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
-      </div>
+      {/* <div className="absolute bottom-0 right-0 z-[10]"> */}
+      <Image src="/coding-boy.gif" alt="horse" height={600} width={600} className="absolute right-36 top-36 z-[10]" />
+      {/* <Image src="/cliff.webp" alt="cliff" width={480} height={480} /> */}
+      {/* </div> */}
 
       <div className="absolute bottom-0 z-[5] w-full h-auto">
         <Image src="/trees.webp" alt="trees" width={2000} height={2000} className="w-full h-full" />
