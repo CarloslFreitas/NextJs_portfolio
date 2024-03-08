@@ -9,7 +9,7 @@ const Page = () => {
         <div
             style={{ backgroundImage: "url(/space3.jpg)" }}
             className='w-screen h-screen flex items-center justify-center bg-center bg-cover'>
-            <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%] overflow-y-auto'>
+            <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%] overflow-y-auto max-lg:grid-cols-1 max-lg:max-h-[68%] '>
                 {Projects.map((project, index) => (
                     <ProjectCard
                         key={index}
