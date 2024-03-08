@@ -106,7 +106,7 @@ export const Projects = [
     src2: "",
     githubRepo:
       "https://github.com/CarloslFreitas/NestJs-BackEnd-AgendaTech_API",
-    deploy: null,
+    deploy: "",
   },
   {
     title: "Projeto JOBS",

@@ -17,13 +17,12 @@ export default function Home() {
             meu acervo de ferramentas, e desenvolver soluções para qualquer problema e situação.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
-            <a
-              href="https://docs.google.com/document/d/12aZXGEzw-T8E_O4Na3aAOI0huX6lj90bNvAdo4LDD-4/edit?usp=sharing"
+            <Link href="https://docs.google.com/document/d/12aZXGEzw-T8E_O4Na3aAOI0huX6lj90bNvAdo4LDD-4/edit?usp=sharing"
               target="_blank"
               className="rounded-[20px] group relative bg-clip bg-gradient-to-b from-cyan-500 to-purple-500 opacity-90 hover:from-red-500 hover:to-purple-500 hover:opacity-80 px-5 py-3 text-lg text-white max-w-[200px] duration-200 hover:scale-110"
             >
               Visualizar CV
-            </a>
+            </Link>
             <Link
               href="/my-skills"
               className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px] hover:bg-sky-500 duration-200 hover:scale-110"
@@ -50,13 +49,13 @@ export default function Home() {
       </div>
 
       <div className="absolute flex bottom-28 z-[20] right-5 flex-col md:hidden gap-5">
-        <a
+        <Link
           href="https://docs.google.com/document/d/12aZXGEzw-T8E_O4Na3aAOI0huX6lj90bNvAdo4LDD-4/edit?usp=sharing"
           target="_blank"
           className="rounded-[20px] group relative -top-36 -left-8  bg-clip bg-gradient-to-b from-cyan-500 to-purple-500 opacity-90 border hover:from-red-500 hover:to-purple-500 hover:duration-200 border-white px-5 py-3 text-lg text-white max-w-[200px] flex justify-center duration-200 hover:scale-110"
         >
           Visualizar CV
-        </a>
+        </Link>
 
         {/* <Link
           href="/my-projects"
