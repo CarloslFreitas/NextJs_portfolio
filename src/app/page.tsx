@@ -73,7 +73,7 @@ export default function Home() {
       </div>
 
       {/* <div className="absolute bottom-0 right-0 z-[10]"> */}
-      <Image src="/coding-boy.gif" alt="horse" height={600} width={400} className="relative -top-80 z-[7]" />
+      {/* <Image src="/coding-boy.gif" alt="horse" height={600} width={400} className="relative -top-80 z-[7]" /> */}
       {/* <Image src="/cliff.webp" alt="cliff" width={480} height={480} /> */}
       {/* </div> */}
 

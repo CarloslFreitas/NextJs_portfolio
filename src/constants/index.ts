@@ -3,37 +3,43 @@ import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 export const SkillData = [
   {
     name: "Html 5",
-    Image: "/html.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
     width: 80,
     height: 80,
   },
   {
     name: "Css",
-    Image: "/css.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     width: 80,
     height: 80,
   },
   {
     name: "JavaScript",
-    Image: "/js.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     width: 65,
     height: 65,
   },
   {
     name: "Tailwind Css",
-    Image: "/tailwind.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     width: 80,
     height: 80,
   },
   {
     name: "React",
-    Image: "/react.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
     width: 80,
     height: 80,
   },
   {
     name: "TypeScript",
-    Image: "/ts.png",
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     width: 80,
     height: 80,
   },
@@ -57,9 +63,10 @@ export const SkillData = [
   },
   {
     name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
+    Image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+    width: 90,
+    height: 90,
   },
   {
     Name: "Postgres",
@@ -72,38 +79,92 @@ export const SkillData = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "GitHub",
+    src: "/github.png",
+    link: "https://github.com/CarloslFreitas",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "Linkedin",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+    link: "https://www.linkedin.com/in/carlos-henrique-freitas-de-almeida/",
   },
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png",
+    title: "Agenda Tech FullStack",
+    text: "Aplicação Web Construida em React, no intuito de realizar cadastros e login de usuários para que possam salvar contatos na Agenda e exporta-los em pdf.",
+    src: "/agendatech.png",
+    src2: "/agendatech2.png",
+    githubRepo:
+      "https://github.com/CarloslFreitas/NestJs-BackEnd-AgendaTech_API",
+    deploy: "https://m6-fullstack-tech-frontend-carlosl-freitas.vercel.app",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png",
+    title: "Agenda Tech API",
+    text: "Uma API construida em NestJs para gerenciamento de contatos, possui rotas para Login e Cadastro para que cada usário tenha sua própria agenda online.",
+    src: "/apicontact.png",
+    src2: "",
+    githubRepo:
+      "https://github.com/CarloslFreitas/NestJs-BackEnd-AgendaTech_API",
+    deploy: null,
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png",
+    title: "Projeto JOBS",
+    text: "Aplicação para divulgar vagas de emprego, Login e Cadastro de empresas, CRUD para Vagas e listagem de aplicações para a vaga especifica.",
+    src: "/jobs.png",
+    src2: "/jobs2.png",
+    githubRepo: "https://github.com/Projeto-Jobs/group9-jobs",
+    deploy: "https://jobs-five.vercel.app",
   },
   {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
+    title: "Kenzie Hub",
+    text: "Aplicação Web feito em React, possibilita Cadastro e login de usuários para que possam cadastrar tecnologias e seu nivel de conhecimento.",
+    src: "/kenzie_hub.png",
+    src2: "/kenzie_hub2.png",
+    githubRepo: "https://github.com/CarloslFreitas/react-kenzie-hub",
+    deploy: "https://react-entrega-kenzie-hub-carlosl-freitas.vercel.app",
+  },
+  {
+    title: "Burguer Kenzie",
+    text: "Aplicação Web feito em React, simulação de um E-commerce de lanches online, com adição de produtos ao carrinho e filtro de busca.",
+    src: "/amburgueria.png",
+    src2: "",
+    githubRepo: "https://github.com/CarloslFreitas/react-template-hamburgueria",
+    deploy:
+      "https://react-entrega-s3-template-hamburgueria-carlosl-freitas.vercel.app",
+  },
+  {
+    title: "NuKenzie",
+    text: "Aplicação Web feito em React, Gerenciador de finanças, onde o usuario pode informar valores de entrada e saida e ter um resumo de gastos.",
+    src: "/nu_kenzie.png",
+    src2: "",
+    githubRepo: "https://github.com/CarloslFreitas/react-template-nu-kenzie",
+    deploy:
+      "https://react-entrega-s1-template-nu-kenzie-carlosl-freitas.vercel.app",
+  },
+];
+export const Contacts = [
+  {
+    title: "WhatsApp",
+    img: "/phonew.png",
+    description:
+      "Me ligue ou me envie uma mensagem com propostas e/ou feedbacks.",
+    link: "Vamos Conversa",
+    url: "https://w.app/NIFxnm",
+  },
+  {
+    title: "Email",
+    img: "/mail.png",
+    description: "Envie-me um email com feedbacks, sugestões e ideias.",
+    link: "Me envie um email",
+    url: "mailto:carlos.d.freitas0@hotmail.com",
+  },
+  {
+    title: "Linkedin",
+    img: "/linkedin.png",
+    description: "Acesse meu perfil no Linkedin e vamos nos conectar!",
+    link: "Acesse meu Linkedin",
+    url: "https://www.linkedin.com/in/carlos-henrique-freitas-de-almeida/",
   },
 ];
 

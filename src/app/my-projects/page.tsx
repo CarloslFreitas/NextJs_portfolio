@@ -8,14 +8,23 @@ const Page = () => {
     return (
         <div
             style={{ backgroundImage: "url(/space3.jpg)" }}
-            className='w-screen h-screen flex items-center justify-center bg-center bg-cover'>
-            <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%] overflow-y-auto max-lg:grid-cols-1 max-lg:max-h-[68%] '>
+            className=' w-screen h-screen flex items-center flex-col justify-center bg-center bg-cover'>
+            <h1 className='font-semibold text-white text-[45px] mb-3'>
+                Meus {" "}
+                <span className='text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>
+                    Projetos
+                </span>
+            </h1>
+            <div className='z-10 grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%] h-[580px] overflow-auto max-lg:grid-cols-1 max-lg:max-h-[68%] scrollbar-thin scrollbar-webkit p-1'>
                 {Projects.map((project, index) => (
                     <ProjectCard
                         key={index}
                         title={project.title}
                         text={project.text}
                         image={project.src}
+                        image2={project.src2}
+                        deploy={project.deploy}
+                        repo={project.githubRepo}
                     />
                 ))}
             </div>
