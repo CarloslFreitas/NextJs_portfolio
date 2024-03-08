@@ -69,7 +69,7 @@ export const SkillData = [
     height: 90,
   },
   {
-    Name: "Postgres",
+    name: "Postgres",
     Image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
     width: 90,
