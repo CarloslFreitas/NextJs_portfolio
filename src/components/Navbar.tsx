@@ -25,7 +25,7 @@ const Navbar = () => {
 
             <div className="flex flex-row gap-10 mb-1">
                 {Socials.map((social, index) => (
-                    <a key={index} href={social.link} target="_blank">
+                    <a key={index} href={social.link} target="_blank" className="hover:scale-[150%] duration-200">
                         <Image
                             key={social.name}
                             src={social.src}
