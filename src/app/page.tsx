@@ -80,7 +80,7 @@ export default function Home() {
         <Image src="/trees.webp" alt="trees" width={2000} height={2000} className="w-full h-full" />
       </div>
 
-      <Image src="/stars.png" alt="stars" height={300} width={300} className="absolute top-0 left-0 z-[10]" />
+      <Image src="/stars.png" unoptimized alt="stars" height={300} width={300} className="absolute top-0 left-0 z-[10]" />
     </main>
   );
 }
