@@ -9,7 +9,7 @@ const Page = () => {
         <div
             style={{ backgroundImage: "url(/space3.jpg)" }}
             className='w-screen h-screen flex items-center justify-center bg-center bg-cover'>
-            <div className=" pt-20 max-w-[90%] w-[1220px] h-[75%] md:h-[75%] flex justify-around flex-wrap scrollbar-thin scrollbar-webkit overflow-y-auto overflow-x-hidden gap-7 p-4 mt-10">
+            <div className=" pt-20 max-w-[90%] w-[1220px] h-[75%] md:h-[75%] max-sm:pb-24 flex justify-around flex-wrap scrollbar-thin scrollbar-webkit overflow-y-auto overflow-x-hidden gap-7 p-4 mt-10">
                 <div className=" z-10 flex flex-col items-center flex-wrap gap-7 max-w-[100%] w-[450px] mt-10">
                     <h1 className='font-semibold text-white text-[45px] mb-3 text-center'>
                         Entre em {" "}
