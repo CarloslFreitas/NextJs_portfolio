@@ -29,7 +29,7 @@ const Navigation = () => {
     // className="relative z-[50] -bottom-36 w-[80%] max-h-[150px] rounded-t-3xl flex justify-between items-center border bg-black bg-opacity-90 border-white px-4 py-7"
     return (
         <div style={{ maxWidth: "500px", }}
-            className=" max-sm:bottom-[135px] relative z-[50] bottom-[70px] w-[80%] max-h-[150px] rounded-t-3xl flex justify-between items-center border bg-black bg-opacity-95 border-white px-4 py-7">
+            className=" max-sm:bottom-[125px] relative z-[50] bottom-[70px] w-[80%] max-h-[150px] rounded-t-3xl flex justify-between items-center border bg-black bg-opacity-95 border-white px-4 py-7">
             {isRouting && <Transition />}
             {NavLinks.map((nav) => (
                 <Link
