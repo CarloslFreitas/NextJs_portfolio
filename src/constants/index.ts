@@ -91,6 +91,14 @@ export const Socials = [
 ];
 export const Projects = [
   {
+    title: "Porfoio NextJs",
+    text: "Portifólio para apresentação pessoal, destacando skills e techs, projetos e meios de contato. Construido com NextJS, estilizado com TailWind.",
+    src: "/portfolio.png",
+    src2: "/portfolio2.png",
+    githubRepo: "https://github.com/CarloslFreitas/NextJs_portfolio",
+    deploy: "https://next-js-portfolio-carlos.vercel.app",
+  },
+  {
     title: "Agenda Tech FullStack",
     text: "Aplicação Web Construida em React, no intuito de realizar cadastros e login de usuários para que possam salvar contatos na Agenda e exporta-los em pdf.",
     src: "/agendatech.png",

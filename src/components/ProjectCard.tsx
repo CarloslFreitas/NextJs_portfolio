@@ -53,10 +53,10 @@ const ProjectCard = ({ image, title, text, image2, deploy, repo }: Props) => {
                         <div className='flex items-center gap-10 justify-center'>
                             <span className='flex items-center gap-4 hover:scale-110 hover:text-blue-400 duration-150'>
                                 <Image
-                                    src="/githubmini.png"
+                                    src="/github.png"
                                     alt="logo"
-                                    width={40}
-                                    height={40} />
+                                    width={25}
+                                    height={25} />
                                 <a href={repo} target='_blank' >
                                     GitHub Code
                                 </a>
