@@ -37,6 +37,11 @@ const config: Config = {
       },
     },
   },
+  extend: {
+    screens: {
+      small: { raw: "(min-height: 411px)" },
+    },
+  },
   plugins: [
     function ({ addUtilities }: any) {
       const newUtilities = {

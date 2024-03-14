@@ -6,16 +6,30 @@ export default function Home() {
     <main className="w-screen h-screen relative">
       <div className="flex items-center w-full h-full bg-cover bg-center" style={{ backgroundImage: "url(/space2.jpg)" }}>
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col flex-wrap max-sm:pl-8 gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[40px] text-white font-semibold pr-3">
-            Faço tudo possível com {" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 font-bold ">
-              Web Design
-            </span>
-          </h1>
-          <p className="text-gray-200 pr-3">
-            Sempre buscando novas tecnologias para aumentar
-            meu acervo de ferramentas, e desenvolver soluções para qualquer problema e situação.
-          </p>
+          <div className="max-h-[500px] overflow-auto max-md:mt-28 pb-5 pt-5 scrollbar-thin scrollbar-webkit p-1 rounded-lg">
+            <p className="text-[25px] text-white font-semibold ">
+              Olá!  <br />Sou {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 font-bold">
+                Carlos Freitas
+              </span>
+            </p>
+            <h1 className="text-[40px] text-white font-semibold pr-3">
+              Faço tudo possível com {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 font-bold ">
+                Web Design
+              </span>
+            </h1>
+            <p className="text-gray-200 pr-3 leading-8 mt-5 bg-black bg-opacity-45 rounded-lg p-3">
+              Apaixonado por Desenvolvimento de aplicações Web,
+              com formação em FullStack. Tenho experiência em HTML, CSS, React, Next, JS e Typescript como
+              as mais utilizadas e sou um comunicador habilidoso, pronto para colaborar em equipes multidisciplinares.
+              Fora do trabalho, gosto de animes, videogames, cultura geek de modo geral, mantendo um equilíbrio saudável
+              entre vida pessoal e profissional. Estou entusiasmado para contribuir em projetos significativos e continuar
+              crescendo profissionalmente.
+              Estou sempre buscando novas tecnologias para aumentar
+              meu acervo de ferramentas, e desenvolver soluções para qualquer problema e situação.
+            </p>
+          </div>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link href="https://docs.google.com/document/d/12aZXGEzw-T8E_O4Na3aAOI0huX6lj90bNvAdo4LDD-4/edit?usp=sharing"
               target="_blank"
@@ -48,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute flex bottom-28 z-[20] right-5 flex-col md:hidden gap-5">
+      <div className="absolute flex bottom-2 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
           href="https://docs.google.com/document/d/12aZXGEzw-T8E_O4Na3aAOI0huX6lj90bNvAdo4LDD-4/edit?usp=sharing"
           target="_blank"

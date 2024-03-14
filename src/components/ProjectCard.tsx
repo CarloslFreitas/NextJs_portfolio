@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image';
+import { HiArrowLeft } from "react-icons/hi";
 
 interface Props {
     image: string;
@@ -24,33 +25,20 @@ const ProjectCard = ({ image, title, text, image2, deploy, repo }: Props) => {
     }
     return (
         <div
-            onClick={handleFlip}
-            className='w-[450px] h-[280px] rounded-md cursor-pointer '>
-            <motion.div
-                className='flip-card-inner w-full h-full'
-                initial={false}
-                animate={{ rotateY: isFlipped ? 180 : 360 }}
-                transition={{ duration: 0.6, animationDirection: 'normal' }}
-                onAnimationComplete={() => setIsAnimating(false)}
-            >
+            className='max-w-[100%] w-[450px] max-h-[480px] min-h-[280px] flex flex-wrap rounded-md '>
+            <div className='flip-card-inner w-full h-full '>
                 <div
                     style={{ backgroundImage: `url(${image})` }}
-                    className='w-full h-full group relative flip-card-front bg-cover bg-center text-white rounded-lg p-4'>
-                    <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-50 duration-150' />
-                    <div className='absolute inset-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center z-[20] justify-center font-bold'>
-                        Learn More &gt;
-                    </div>
-                </div>
-                <div
-                    style={{ backgroundImage: `url(${image2})` }}
-                    className='w-full h-full group relative flip-card-back bg-cover bg-center text-white rounded-lg p-4'>
-                    <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-80 z-[-1]' />
-                    <div className='flex flex-col gap-10 py-1 z-[30]'>
-                        <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500 text-2xl font-bold'>{title}</h1>
-                        <p className='text-gray-300 text-[16px]'>
+                    className='w-full h-full group relative  bg-cover bg-center text-white rounded-lg p-4 '>
+                    <div className=' absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-50 duration-150' />
+                    <div className=' border border-white overflow-auto flex-col absolute inset-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center z-[20] gap-8 p-4 justify-center rounded-md hover:bg-black duration-150 opacity-80 font-bold'>
+                        <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500 text-2xl font-bold'>
+                            {title}
+                        </h1>
+                        <p className='text-gray-300 text-[16px] max-h-[100px] hidden sm:block'>
                             {text}
                         </p>
-                        <div className='flex items-center gap-10 justify-center'>
+                        <div className='flex items-center gap-10 justify-center max-[410px]:flex-col max-[410px]:gap-5 max-[410px]:items-start'>
                             <span className='flex items-center gap-4 hover:scale-110 hover:text-blue-400 duration-150'>
                                 <Image
                                     src="/github.png"
@@ -61,21 +49,23 @@ const ProjectCard = ({ image, title, text, image2, deploy, repo }: Props) => {
                                     GitHub Code
                                 </a>
                             </span>
-                            <span className='flex items-center gap-4 hover:scale-110 hover:text-blue-400 duration-150'>
-                                <Image
-                                    src="/share.png"
-                                    alt="logo"
-                                    width={25}
-                                    height={20} />
-                                <a href={deploy} target='_blank' >
-                                    Deploy
-                                </a>
 
-                            </span>
+                            {deploy.length > 0 ?
+                                <span className='flex items-center gap-4 hover:scale-110 hover:text-blue-400 duration-150'>
+                                    <Image
+                                        src="/share.png"
+                                        alt="logo"
+                                        width={25}
+                                        height={20} />
+                                    <a href={deploy} target='_blank' >
+                                        Deploy
+                                    </a>
+                                </span> : ''}
+
                         </div>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </div>
     )
 }
